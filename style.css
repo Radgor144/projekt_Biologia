@@ -2,7 +2,6 @@
 /*
     #001220
     #FBAE3C
-gh
 */
 
 
@@ -206,12 +205,13 @@ header{
 
 .sti{
     margin-top: 2rem;
-    width: 350px;
+    max-width: 350px;
+    min-width: 250px;
 }
 
 .sti img{
     width: 100%;
-    height: 265px;
+    max-height: 265px;
 }
 
 .btn{
