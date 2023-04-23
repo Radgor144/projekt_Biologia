@@ -136,7 +136,7 @@ header{
 
 .f-article, .img-main{
     width: 50%;
-    min-width: 500px;
+    min-width: 400px;
     padding: 0 1rem 0 1rem;
     display: flex;
     justify-content: center;
@@ -190,7 +190,8 @@ header{
 }
 
 .st-container{
-    width: 400px;
+    max-width: 400px;
+    min-width: 350px;
     height: 468px;
     padding:  0rem 2rem 2rem 2rem;
     background-color: rgba(40, 67, 102, 0.629);
