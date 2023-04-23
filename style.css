@@ -147,17 +147,16 @@ header{
 
 .img-main img{
     width: 100%;
-    height: auto;
 }
 
 .img-main{
     position: relative;
     z-index: 10;
-    width: 50%;
+    width: 40%;
 }
 
 .f-article{
-    padding: 2rem;
+    padding: 2rem 0rem 2rem 2rem;
     position: relative;
     z-index: 10;
 }
