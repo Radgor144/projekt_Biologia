@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
-/*
-    #001220
-    #FBAE3C
-*/
-
 
 *{
     box-sizing: border-box;
@@ -22,10 +17,6 @@ html{
 }
 
 
-.container{
-    max-width: 100vw;
-}
-
 
 ul{
     display: flex;
@@ -43,7 +34,7 @@ ol{
     margin-top: 2rem;
 }
 
-ol li {
+ol li{
     margin-top: 2rem;
     line-height: 2.5rem;
     font-size: 2rem;
@@ -52,24 +43,31 @@ ol li {
 ul li:hover{
     color: white;
     text-decoration: underline;
+
 }
 
-ul li{
-    cursor: pointer;
-}
-
-h1,h2{
-    color: hsl(76, 85%, 54%)
+h1,h2,h3{
+    color: hsl(76, 85%, 54%);
+    color: black;
 }
 
 h1{
     font-size: 4rem;
+    color: white;
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: black;
+}
+
+h3{
+    font-size: 2rem;
     margin-top: 2rem;
 }
+
+
 
 .ml{
     margin-left: auto;
@@ -106,6 +104,7 @@ nav{
 .logo img{
     width: 60px;
     height: 60px;
+    
 }
 
 .logo-img{
@@ -122,150 +121,89 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(images/s2bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: hsl(218, 32%, 29%);
     padding: 2rem 0 4rem 0;
     position: relative;
     max-width: 100vw;
     overflow: hidden;
 }
 
-header{
-    padding: 2rem;
-    position: relative;
-    z-index: 10;
-}
-
-
-#section-one{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    gap: 2rem;
-}
-
-.f-article, .img-main{
-    max-width: 50%;
-    padding: 0 1rem 0 1rem;
-    min-width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-main img{
+section{
     width: 100%;
-}
-
-.img-main{
-    position: relative;
-    z-index: 10;
-    width: 40%;
-}
-
-.f-article{
-    padding: 2rem 0rem 2rem 2rem;
-    position: relative;
-    z-index: 10;
-}
-
-.article-container{
-    width: 80%;
-    position: relative;
-    z-index: 10;
-}
-
-#tablica{
-    box-shadow: 30px 30px 20px -10px rgba(0, 0, 0, 0.373);
-    position: relative;
-    z-index: 10;
-
-}
-
-#lisc{
-    max-width: 60%;
-    position:absolute;
-    z-index: 0;
-    top: 20%;
-    left: 40%;
-    opacity: .5;
-}
-
-#section-two{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:stretch;
     flex-wrap: wrap;
-    margin-top: 12rem;
-    gap: 2rem;
+    gap: 4rem;
+    padding: 2rem 2rem 2rem 2rem;
+
 }
 
-.st-container{
-    width: 350px;
-    height: 480px;
-    padding:  0rem 2rem 2rem 2rem;
-    background-color: rgba(40, 67, 102, 0.629);
+.picture{
+    width: 400px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.picture img{
+    width: 100%;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#arrow{
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.box{
+    background-color: white;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 20px 20px 30px 0px black;
+    width: 400px;
+}
+
+.text{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px 20px 20px 20px ;
-
+    flex-direction: column;
+    padding: 1rem;
+    height: 540px;
 }
 
-.asia{
-    margin-top: 0rem;
-}
-
-.sti{
-    margin-top: 2rem;
-    width: 300px;
-}
-
-.sti img{
-    width: 300px;
-    height: 265px;
-}
-
-.btn{
-    margin-top: 2rem;
-    padding: 1rem 2rem 1rem 2rem;
-    background-color: rgba(113, 146, 201, 0.495);
-    border-radius: 40px 40px 40px 40px;
-    border: solid 2px white;
-    cursor: pointer;
-}
-
-.h2-border{
+table{
     color: white;
-    padding: 1rem 2rem 1rem 2rem;
-    background-color: rgba(113, 146, 201, 0.495);
-    border-radius: 40px 40px 40px 40px;
+    width: 350px;
+    height: 100%;
 }
 
-#africa{
-    width:250px;
+td{
+    padding: 1rem;
+    font-size: 1.5rem;
+    word-spacing: .5rem;
 }
 
-#Australia{
-    margin-top: 1rem;
-    height: 260px;
+tr:nth-child(2n){
+    background-color: rgb(63, 63, 185);
 }
 
-.obrazek{
-    display: flex;
-    justify-content: flex-start;
-
+tr:nth-child(2n+1){
+    background-color: rgb(104, 104, 187);
 }
 
-#konik{
-    width: 300px;
-    height: 175px;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: hsl(216, 53%, 9%);
@@ -280,6 +218,17 @@ footer{
 footer p{
     margin-top: 1rem;
     
+}
+
+.obrazek{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#konik{
+    width: 300px;
+    height: 175px;
 }
 
 .row2 img{
