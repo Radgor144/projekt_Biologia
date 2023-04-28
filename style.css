@@ -46,7 +46,6 @@ body{
 
 ul{
     display: flex;
-    align-content: center;
     align-items: center;
     font-size: 2rem;
     list-style: none;
@@ -92,10 +91,6 @@ h2{
     width: 120%;
 }
 
-.ml{
-    margin-left: auto;
-}
-
 p{
     margin-top: 2rem;
     font-size: 2rem;
@@ -111,10 +106,12 @@ nav{
     flex-direction: row;
     padding: 1rem 2rem 1rem 2rem;
     justify-content: space-between;
+    align-items: center;
     height: 82px;
 }
 
 #zaloguj{
+    margin-left: auto;
     border-radius: 20px 20px 20px 20px;
     padding: 1rem 2rem 1rem 2rem;
     background-image: linear-gradient(
@@ -126,13 +123,11 @@ nav{
     color: rgb(255, 255, 255);
 }
 
-#menu{
-    margin-left: 2rem;
-}
-
 .logo{
     display: flex;
     flex-direction: row;
+    position: relative;
+    z-index: 100;
 }
 
 .logo img{
@@ -145,10 +140,47 @@ nav{
     height: 82px;
 }
 
-.items{
+.items, .podstrony{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
+.podstrony{
+    width: 100%;
+}
+
+.hamburger{
+    width: 60px;
+    height: 50px;
+    margin-right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+.lines{
+    width: 60px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 20;
+    opacity: 0;
+    transition: 2s;
+    transform: translateY(-100%);
+}
+
+
+
 
 main{
     display: flex;
@@ -295,7 +327,7 @@ header img{
 
 .boxs img:hover{
     transform: scale(1.2);
-    transition: 1s ease-in-out
+    transition: 1s ease-in-out;
 }
 
 
@@ -309,7 +341,7 @@ header img{
 
 
 #konik{
-    width: 300px;
+    width: 100%;
     height: 175px;
 }
 
@@ -437,19 +469,78 @@ footer p{
     .img-main{
         margin-top: 10rem;
     }
-}
 
-
-@media screen and (max-width: 700px) {
-    .items{
+    .logowanie, .podstrony{
         display: none;
+    }
+
+    .hamburger{
+        display: flex;
     }
 }
 
 
+@media screen and (max-width: 700px) {
+
+    html{
+        font-size: 10px;
+    }
+
+    .items{
+        display: none;
+    }
+
+    h2{
+        width: 100%;
+        text-align: center;
+    }
+
+}
 
 
 
+
+
+
+
+.aline1in{
+    transform: rotate(45deg) translateY(10px) translateX(20px);
+    transition: 1s;
+}
+.aline2in{
+    opacity: 0;
+    transition: .3s;
+}
+.aline3in{
+    transform: rotate(-45deg) translateY(-10px) translateX(20px);
+    transition: 1s;
+}
+
+
+.aline1out{
+    transform: rotate(0) translateY(0px) translateX(0px);
+    transition: 1s;
+}
+.aline2out{
+    opacity: 1;
+    transition: 3s;
+}
+.aline3out{
+    transform: rotate(0) translateY(0px) translateX(0px);
+    transition: 1s;
+}
+
+.amenuin{
+    opacity: 1;
+    transition: 2s all;
+    transform: translateY(0%);
+}
+
+.amenuout{
+    opacity: 0;
+    transition: 2s;
+    transform: translateY(-100%);
+}
 
 
 .hidden{
