@@ -74,3 +74,20 @@ hamburger.addEventListener("click", () => {
     }
     
 });
+
+
+let zaloguj = document.querySelector('.zalogujswap');
+let zarejestruj = document.querySelector('.zarejestrujswap');
+let box3 = document.querySelector('.box3');
+
+
+zaloguj.addEventListener("click", () => {
+    box3.classList.remove('right');
+    box3.classList.add('left');
+
+})
+
+zarejestruj.addEventListener("click", () => {
+    box3.classList.remove('left');
+    box3.classList.add('right');
+})
