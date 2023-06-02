@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Raleway:wght@900&display=swap');
+/*
+    #001220
+    #FBAE3C
+*/
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-size: 11px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", sans-serif;
+    word-spacing: 1rem;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.container{
+    width: 100vw;
+}
+
+
+
+ul{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    list-style: none;
+    gap: 2em;
+    margin-right: 3rem;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+}
+
+ol{
+    text-align: left;
+    margin-top: 2rem;
+}
+
+ol li {
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
+
+ul li:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+ul li{
+    cursor: pointer;
+    color: rgb(54, 150, 96);
+}
+
+h1,h2{
+    color: hsl(0, 0%, 0%)
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 5rem;
+    margin-top: 2rem;
+    text-align: left;
+    width: 120%;
+}
+
+p{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+    position: relative;
+    z-index: 1;
+}
+
+#zaloguj{
+    margin-left: auto;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1rem 2rem 1rem 2rem;
+    background-image: linear-gradient(
+  135deg,
+  hsl(145deg 33% 69%) 1%,
+  hsl(146deg 44% 58%) 50%,
+  hsl(146deg 55% 47%) 99%
+);
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 100;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo-img{
+    width: 60px;
+    height: 82px;
+}
+
+.items, .podstrony{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.podstrony{
+    width: 100%;
+}
+
+.hamburger{
+    width: 60px;
+    height: 50px;
+    margin-right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+}
+
+.lines{
+    width: 60px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 20;
+    opacity: 0;
+    transition: 2s;
+    transform: translateY(-100%);
+}
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0 4rem 0;
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+header{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 300px;
+}
+
+header img{
+    width: 100%;
+}
+
+
+
+
+#konik{
+    width: 100%;
+    height: 175px;
+}
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+    margin-top: -.3rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+footer p{
+    margin-top: 1rem;
+    
+}
+
+.row2 img{
+    margin-top: 1.5rem;
+}
+
+.footer-logo img{
+    height: 100px;
+    width: 100px;
+    margin-left: 2rem;
+}
+
+.footer-logo{
+    width: 300px;
+    text-align: left;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+
+    position: relative;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    width: 250px;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+
+#location{
+    width: 13px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+}
+
+#text3{
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+
+#phone{
+    width: 18px;
+    height: 18px;
+}
+
+#email{
+    width: 20px;
+    height: 16px;
+}
+
+#fb, #tw, #ig{
+   font-size: 20px;
+   width: 50px;
+   height: 50px;
+   padding: 1rem;
+   border-radius: 50%;
+   border: 2px solid white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#fb:hover,#tw:hover,#ig:hover,.btn:hover{
+
+    border: aqua solid 2px;
+}
+
+@media screen and (max-width: 1050px) {
+    footer{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .row{
+        margin-top: 2rem;
+    }
+
+    .img-main{
+        margin-top: 10rem;
+    }
+
+    .logowanie, .podstrony{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    html{
+        font-size: 10px;
+    }
+
+    .items{
+        display: none;
+    }
+
+    h2{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.aline1in{
+    transform: rotate(45deg) translateY(10px) translateX(20px);
+    transition: 1s;
+}
+.aline2in{
+    opacity: 0;
+    transition: .3s;
+}
+.aline3in{
+    transform: rotate(-45deg) translateY(-10px) translateX(20px);
+    transition: 1s;
+}
+
+
+.aline1out{
+    transform: rotate(0) translateY(0px) translateX(0px);
+    transition: 1s;
+}
+.aline2out{
+    opacity: 1;
+    transition: 3s;
+}
+.aline3out{
+    transform: rotate(0) translateY(0px) translateX(0px);
+    transition: 1s;
+}
+
+.amenuin{
+    opacity: 1;
+    transition: 2s all;
+    transform: translateY(0%);
+}
+
+.amenuout{
+    opacity: 0;
+    transition: 2s;
+    transform: translateY(-100%);
+}
+
+
+.hidden{
+opacity: 0;
+filter:blur(5px);
+transform: translateY(100%);
+transition:  all 3s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}

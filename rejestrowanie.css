@@ -1,0 +1,136 @@
+
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.box2{
+  width: 650px;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 10px 1px black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.box3{
+  min-width: 1400px;
+  display: flex;
+  flex-direction: row;
+}
+
+.reg, .log{
+  width: 600px;
+  padding: 0 4rem 0 4rem;
+  background-color: antiquewhite;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-reg{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.log{
+  background-color: rgb(71, 71, 134);
+  position: relative;
+  left: 50px;
+}
+
+
+form{
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+form input, .zaloguj, .zalogujswap, .zarejestrujswap, .zarejestruj{
+  margin-top: 1rem;
+  border-radius: 30px;
+  border: 2px solid black;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p{
+  margin-top: 1rem;
+}
+
+.zarejestruj, .zarejestrujswap{
+  margin-top: 2rem;
+  background-color: hsl(146, 64%, 31%);
+  color: white;
+  font-size: 2rem;
+}
+
+.zarejestruj, .zarejestrujswap{
+  margin-top: 3rem;
+}
+
+.zaloguj, .zalogujswap{
+  background-color: hsl(146, 64%, 31%);
+  color: white;
+  font-size: 2rem;
+}
+
+.zarejestruj:hover, .zarejestrujswap:hover, .zaloguj:hover, .zalogujswap:hover{
+  transition: .3s;
+  background-color: hsl(147, 33%, 48%);
+}
+
+.left{
+  transform: translateX(-645px);
+  transition: all 1.5s ease;
+}
+
+.right{
+  transform: translateX(0px);
+  transition: all 1.5s ease;
+}
+
+
+.landing{
+  position: relative;
+  z-index: 100;
+  min-height: 100vh;
+  background-image: linear-gradient(
+135deg,
+hsl(194deg 50% 79%) 1%,
+hsl(194deg 76% 75%) 50%,
+hsl(194deg 100% 72%) 99%
+);
+}
+
